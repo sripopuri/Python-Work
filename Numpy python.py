@@ -333,3 +333,8 @@ import numpy as np
 x = np.arange(5)
 y = np.empty(5)
 np.multiply(x,10,out=y)
+
+y = np.zeros(10)
+y[::2]
+np.power(2,x,out = y[::2])
+y
