@@ -328,3 +328,8 @@ sp.gamma(5)
 sp.gamma(2)
 sp.gamma(6)
 
+import numpy as np
+
+x = np.arange(5)
+y = np.empty(5)
+np.multiply(x,10,out=y)
