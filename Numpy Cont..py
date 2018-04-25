@@ -56,3 +56,27 @@ M
 a = np.arange(3).reshape((3,1))
 a
 M + a
+
+import numpy as np
+X = np.random.random((10,3))
+X
+X.mean(0)
+
+X_centered = X - X.mean(0)
+X_centered
+X_centered.mean(0)
+
+x = np.linspace(0,5,50)
+y = np.linspace(0,5,50)[:,np.newaxis]
+
+z = np.sin(x)**10 + np.cos(10+y*x)*np.cos(x)
+%matplotlib inline
+import matplotlib.pyplot as plt    
+
+plt.imshow(z, origin='lower', extent=[0, 5, 0, 5],cmap='viridis')
+plt.colorbar();
+
+import pandas as pd
+rainfall = pd.read_csv('data/Seattle2014.csv')['PRCP'].values
+
+np.arange(365)
