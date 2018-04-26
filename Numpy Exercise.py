@@ -126,3 +126,136 @@ a*b
 ?np.dot
 np.dot(a,b)
 a@b
+
+n = np.arange(0,12)
+n
+n[3:7] = -n[3:7]
+n
+
+n = np.arange(0,12)
+n
+n[(n>3)&(n<8)] *= -1
+n
+
+print(sum(range(5),-1))
+from numpy import *
+print(sum(range(5),-1))
+
+sum(range(6),-1)
+range(6)
+sum(range(6),-1)
+
+Z
+Z**Z
+2 << Z
+Z/1/1
+1j*Z
+
+Z = np.arange(0,11)
+Z
+2 << Z
+Z << 2
+
+np.array(0)//np.array(0)
+np.array([np.nan]).astype(int).astype(float)
+np.array([np.nan]).astype(int)
+
+?np.random.uniform
+z = np.random.uniform(-10,10,10)
+z
+np.ceil(z)
+np.round(z)
+
+print (np.copysign(np.ceil(np.abs(z)), z))
+
+z1 = np.random.randint(0,10,10)
+z2 = np.random.randint(0,10,10)
+z1
+z2
+np.intersect1d(z1,z2)
+
+np.sqrt(-1) 
+np.emath.sqrt(-1)
+
+today = np.datetime64('today', 'D')
+today
+
+Z = np.arange('2016-07', '2016-08', dtype='datetime64[D]')
+Z
+
+np.ones(3)
+
+z = np.random.uniform(0,4,10)
+z
+np.floor(z)
+np.round(z)
+np.ceil(z)-1
+z-z%1 ## <- gets the decimal parts of the number
+np.trunc(z)
+z.astype(int)
+
+f = np.random.randint(0,5,size = (5,5))
+f
+np.arange(5)
+
+def generate():
+    for x in range(10): 
+        yield(x)
+
+generate()
+
+array = np.fromiter(generate(),dtype=float)
+array
+
+np.random.random(10)
+
+np.linspace(0,1,11,endpoint = False)[1:]
+
+z = np.linspace(0,1,11,endpoint = False)[1:]
+z
+np.sort(z)
+
+np.arange(10)
+np.add.reduce(np.arange(10))
+
+A = np.random.randint(0,2,5)
+A
+B = np.random.randint(0,2,5)
+B
+A == B
+np.array_equal(A,B)
+A[3] = 1
+np.array_equal(A,B)
+
+Z = np.ones(10)
+Z
+Z.flags.writeable = False
+Z[1] = 1
+Z
+
+r = np.random.random(10)
+r
+np.max(r)
+np.argmax(r)
+r[np.argmax(r)] = 0
+r
+
+np.linspace(0,1,5)
+
+Z = np.zeros((5,5), [('x',float),('y',float)])
+Z['x'], Z['y'] = np.meshgrid(np.linspace(0,1,5),np.linspace(0,1,5))
+print(Z)
+
+np.set_printoptions(threshold=np.nan)
+Z = np.zeros((16,16))
+print(Z)
+
+Z = np.arange(100)
+v = np.random.uniform(0,100)
+
+np.min(Z-v)
+index = (abs(Z-v)).argmin()
+index
+Z[index]
+v
+Z
