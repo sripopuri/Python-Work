@@ -15,7 +15,7 @@ data
 type(data)
 data.size
 data.shape
-
+ 
 data.values.shape
 data.index
 type(data.index)
