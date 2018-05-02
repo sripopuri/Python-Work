@@ -56,7 +56,41 @@ pd.Series(16,index = [1,2,3,4,5])
 pd.Series({2:'a', 1:'b', 3:'c'}, index=[1,3])
 pd.Series({2:'a', 1:'b', 3:'c'}, index=[1,4])
 
+area_dict = {'California': 423967, 'Texas': 695662, 'New York': 141297,
+             'Florida': 170312, 'Illinois': 149995}
 
+area = pd.Series(area_dict) 
+area
+population
+
+states= pd.DataFrame({'Population':population,'Area':area})
+states
+states.index
+states.values
+type(states.values)
+type(states.index)
+states.columns
+
+states['Population']
+
+pd.DataFrame({'Population':population})
+
+data = [{'a':i,'b':2*i,'c':3*i}for i in range(4)]
+pd.Series(data)
+
+pd.DataFrame([{'a':1,'b':2},{'b':3,'c':4}])
+
+
+np.random.rand(3,2)
+pd.DataFrame(np.random.rand(3,2),columns = ['a','b'],index = [0,1,2])
+
+np.zeros(3)
+
+ind = pd.Index([1,2,3,4,5,6])
+ind
+ind[5]
+ind[::2]
+ind[::1]
 
 
 
