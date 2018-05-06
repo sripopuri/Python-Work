@@ -10,7 +10,7 @@ import pandas as pd
 
 rng = np.random.RandomState(42)
 rng
-ser = pd.Series(rng.randint(0,10,4))
+ser = pd.Series(rng.randint(0,10,4)) 
 ser
 
 df = pd.DataFrame(rng.randint(0,10,(3,4)),columns = ['A','B','C','D'])
