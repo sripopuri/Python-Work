@@ -2,7 +2,7 @@ import numpy as np
 
 L = np.random.random(100)
 sum(L)
-np.std(L)
+np.std(L) 
 np.sum(L)
 
 big_array = np.random.rand(1000000)
