@@ -7,7 +7,7 @@ np.sum(L)
 
 big_array = np.random.rand(1000000)
 %timeit sum(big_array)
-%timeit np.sum(big_array)
+%timeit np.sum(big_array) 
 
 np.min(big_array)
 np.max(big_array)
