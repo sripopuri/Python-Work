@@ -3,7 +3,7 @@ print("Hello Python!")
 print(7)
 
 import numpy as np
-np.__version__
+np.__version__ 
 
 x = 4
 x = "Four"
