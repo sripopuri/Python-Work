@@ -5,7 +5,7 @@ sum(L)
 np.std(L) 
 np.sum(L)
 
-big_array = np.random.rand(1000000)
+big_array = np.random.rand(1000000) 
 %timeit sum(big_array)
 %timeit np.sum(big_array) 
 
